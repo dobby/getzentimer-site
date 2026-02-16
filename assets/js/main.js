@@ -1,4 +1,6 @@
 (() => {
+  document.documentElement.classList.add("js");
+
   const config = {
     APP_STORE_URL: "https://apps.apple.com/app/id0000000000",
     CANONICAL_URL: "https://getzentimer.com/",
@@ -69,7 +71,6 @@
     setupRevealAnimations();
     setupParallax();
     setupFooterYear();
-    setupFocusPulse();
     setupThemeCards();
     setupDeckRotation();
     setupDeckInteraction();
@@ -176,20 +177,19 @@
     const publishEl = document.querySelector("[data-publish-date]");
     if (publishEl) {
       const stamp = document.documentElement.getAttribute("data-build-date");
-      if (stamp) {
-        publishEl.textContent = `Published ${stamp}`;
-      }
+      const fallbackDate = formatPublishDate(document.lastModified);
+      publishEl.textContent = `Published ${stamp || fallbackDate}`;
     }
   }
 
-  function setupFocusPulse() {
-    if (prefersReducedMotion) {
-      return;
-    }
-    const primaryCTA = document.querySelector("[data-primary-cta]");
-    if (primaryCTA) {
-      primaryCTA.classList.add("zt-pulse");
-    }
+  function formatPublishDate(value) {
+    const parsed = new Date(value);
+    const safeDate = Number.isNaN(parsed.getTime()) ? new Date() : parsed;
+    return new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    }).format(safeDate);
   }
 
   function setupThemeCards() {

@@ -5,10 +5,11 @@
 - **Metal export: use `device.makeLibrary(source:)`, not `makeDefaultLibrary()`.** The latter returns nil in standalone script context. The exporter compiles the shader source directly.
 - **Smart App Banner app-id is commented out.** Uncomment `<meta name="apple-itunes-app" content="app-id=...">` with real numeric ID before launch.
 - **Pages deploy should stay Actions-based.** Keep `.github/workflows/deploy-site.yml` as the deployment path for this repo.
+- **Heading colors should be explicit in `assets/css/styles.css`.** Because index loads Bootstrap asynchronously, set title colors directly (for `h1/h2/h3` sections) instead of relying on defaults.
+- **Reveal animation must fail open.** Keep `[data-reveal]` visible by default and only apply hidden pre-state under a JS guard class (e.g. `.js`) so the hero/header never disappears if JS fails.
+- **Footer publish date needs a fallback.** If `data-build-date` is missing, render from `document.lastModified` (or current date fallback) so publish text is never blank.
 - **Support URL should expose real contact details.** App Store support pages should include a real contact method; keep spam risk lower by rendering an obfuscated visible address and generating `mailto:` via JS fragments.
-- **Keep SVG displacement opt-in only.** `#zt-glass-distortion` may exist for CTA experimentation, but default CTA styling must remain the non-distorted layered glass unless `.zt-glass-btn--liquid` is explicitly added.
-- **CTA buttons now use a required layer structure.** `.zt-glass-btn` expects `__fx`, `__effect`, `__tint`, `__shine`, and `__label` children for the glass rendering; changing CTA markup to plain text will break the new look.
-- **`#zt-glass-distortion` is opt-in only.** Distortion filter defs are present in `index.html`, but the effect applies only with `.zt-glass-btn--liquid` and is intentionally unused by default.
+- **Button style is intentionally unified to simple ghost anchors.** Keep CTA/button markup as plain text inside `<a class="zt-glass-btn zt-glass-btn--ghost">…</a>` so all page buttons match.
 - **`no-backdrop` fallback must be preserved.** Switches to opaque surfaces when `backdrop-filter` is unsupported. Don't remove this class.
 - **`prefers-reduced-motion` disables background rotation.** Theme crossfade stops; keep this behavior.
 - **Hero deck animation also stops for reduced motion.** The 10s front/back phone swap must not run when reduced motion is enabled.
@@ -29,8 +30,7 @@ Static site at repo root: `index.html`, `privacy.html`, `support.html`, `assets/
 ### Glass styling
 - Tokens: `--glass-bg`, `--glass-bg-strong`, `--glass-border`, `--glass-blur`, `--glass-shadow`.
 - `.zt-glass`: linear-gradient + border + blur + soft shadow. No inset highlight, no saturation.
-- `.zt-glass-btn` (+ `--primary`, `--ghost`): same glass language, stable class API.
-- CTA buttons now render with internal layered nodes (`.zt-glass-btn__effect`, `__tint`, `__shine`) and keep hover behavior to a slight tint shift plus subtle lift.
+- `.zt-glass-btn` (`--ghost`): shared button style used across index/privacy/support for visual consistency.
 - Subtle hover lift (`translateY(-1px)`), reduced pulse intensity.
 
 ### Smart App Banner

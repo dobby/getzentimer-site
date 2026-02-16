@@ -128,6 +128,7 @@ a {
   letter-spacing: 0.012em;
   margin: 0 0 0.95rem;
   max-width: 18ch;
+  color: var(--text-main);
 }
 
 .zt-hero p {
@@ -350,6 +351,7 @@ a {
   font-family: "Fraunces", serif;
   font-size: clamp(1.7rem, 4vw, 2.7rem);
   margin-bottom: 0.85rem;
+  color: var(--text-main);
 }
 
 .zt-section > p {
@@ -372,6 +374,7 @@ a {
 .zt-feature h3 {
   font-size: 1.05rem;
   margin-bottom: 0.35rem;
+  color: var(--text-main);
 }
 
 .zt-feature p {
@@ -466,6 +469,7 @@ a {
 .zt-price-card h3 {
   margin-bottom: 0.3rem;
   font-size: 1.2rem;
+  color: var(--text-main);
 }
 
 .zt-price-card p {
@@ -487,6 +491,7 @@ a {
 .zt-faq-item h3 {
   font-size: 0.96rem;
   margin-bottom: 0.25rem;
+  color: var(--text-main);
 }
 
 .zt-faq-item p {
@@ -646,12 +651,17 @@ a {
 }
 
 [data-reveal] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.js [data-reveal] {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 560ms ease, transform 560ms ease;
 }
 
-[data-reveal].is-visible {
+.js [data-reveal].is-visible {
   opacity: 1;
   transform: translateY(0);
 }
