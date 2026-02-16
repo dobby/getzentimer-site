@@ -33,6 +33,15 @@
     return supportsWebP ? path.replace(/\.png$/, ".webp") : path;
   }
 
+  function updatePictureSource(img, newSrc) {
+    const picture = img.closest("picture");
+    if (!picture) return;
+    const source = picture.querySelector("source[type='image/webp']");
+    if (source) {
+      source.setAttribute("srcset", newSrc.replace(/\.png$/, ".webp"));
+    }
+  }
+
   const dom = {
     bgLayers: Array.from(document.querySelectorAll(".zt-bg-layer")),
     showcaseTimerScreen: document.getElementById("zt-showcase-screen-timer"),
@@ -284,12 +293,13 @@
 
     const normalizedIndex = ((index % state.themes.length) + state.themes.length) % state.themes.length;
     const theme = state.themes[normalizedIndex];
+    // Preload only above-fold images before applying; feature screens load in background
     await Promise.all([
       preloadImage(theme.imageURL),
       preloadImage(theme.timerScreenshotURL),
-      preloadImage(theme.statsScreenshotURL),
-      ...Object.values(theme.featureScreenshots).map(preloadImage)
+      preloadImage(theme.statsScreenshotURL)
     ]);
+    Object.values(theme.featureScreenshots).forEach(preloadImage);
 
     if (!state.backgroundInitialized || !animateBackground || dom.bgLayers.length < 2) {
       dom.bgLayers.forEach((layer) => {
@@ -356,16 +366,20 @@
 
     if (screen.src.endsWith(newSrc.replace(/^.*\//, ""))) return;
 
-    if (prefersReducedMotion) {
+    const applySource = () => {
+      updatePictureSource(screen, newSrc);
       screen.src = newSrc;
       screen.alt = altText;
+    };
+
+    if (prefersReducedMotion) {
+      applySource();
       return;
     }
 
     screen.classList.add("is-fading");
     setTimeout(() => {
-      screen.src = newSrc;
-      screen.alt = altText;
+      applySource();
       screen.classList.remove("is-fading");
     }, 500);
   }
@@ -377,16 +391,20 @@
       if (!newSrc) return;
       if (screen.src.endsWith(newSrc.replace(/^.*\//, ""))) return;
 
-      if (prefersReducedMotion) {
+      const applySource = () => {
+        updatePictureSource(screen, newSrc);
         screen.src = newSrc;
         screen.alt = `ZenTimer ${key} in ${theme.displayName} theme`;
+      };
+
+      if (prefersReducedMotion) {
+        applySource();
         return;
       }
 
       screen.classList.add("is-fading");
       setTimeout(() => {
-        screen.src = newSrc;
-        screen.alt = `ZenTimer ${key} in ${theme.displayName} theme`;
+        applySource();
         screen.classList.remove("is-fading");
       }, 500);
     });
