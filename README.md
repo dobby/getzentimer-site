@@ -7,9 +7,8 @@ Static one-page marketing site for ZenTimer.
 From repo root:
 
 ```bash
-python3 -m http.server 8765 --directory site
+python3 -m http.server 8765
 ```
-K%Q8cvIBSjl!&
 Then open: `http://127.0.0.1:8765/index.html`
 
 ## Structure
@@ -42,7 +41,7 @@ Before publishing:
 From repo root:
 
 ```bash
-xcrun swift site/tools/export_metal_backgrounds.swift
+xcrun swift tools/export_metal_backgrounds.swift
 ```
 
 This generates:
@@ -54,10 +53,10 @@ This generates:
 
 ## GitHub Pages
 
-This repo deploys `site/` to Pages with GitHub Actions:
+This repo deploys to Pages with GitHub Actions:
 
 - Workflow: `.github/workflows/deploy-site.yml`
-- Trigger: pushes to `main` that change files under `site/`
+- Trigger: pushes to `main`
 
 Custom domain setup for `getzentimer.com`:
 
@@ -78,5 +77,5 @@ Custom domain setup for `getzentimer.com`:
      - `2606:50c0:8002::153`
      - `2606:50c0:8003::153`
    - Add `CNAME` for host `www` to `dobby.github.io`
-3. Keep `site/CNAME` with:
+3. Keep `CNAME` with:
    - `getzentimer.com`
