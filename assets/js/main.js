@@ -21,6 +21,18 @@
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // One-time WebP support check
+  const supportsWebP = (() => {
+    const canvas = document.createElement("canvas");
+    canvas.width = 1;
+    canvas.height = 1;
+    return canvas.toDataURL("image/webp").indexOf("data:image/webp") === 0;
+  })();
+
+  function screenshotURL(path) {
+    return supportsWebP ? path.replace(/\.png$/, ".webp") : path;
+  }
+
   const dom = {
     bgLayers: Array.from(document.querySelectorAll(".zt-bg-layer")),
     showcaseTimerScreen: document.getElementById("zt-showcase-screen-timer"),
@@ -166,7 +178,9 @@
         const themeId = button.getAttribute("data-theme-option");
         const index = state.themes.findIndex((theme) => theme.id === themeId);
         if (index >= 0) {
-          void applyThemeByIndex(index, { animateBackground: true, fromUser: true });
+          button.classList.add("is-loading");
+          applyThemeByIndex(index, { animateBackground: true, fromUser: true })
+            .finally(() => button.classList.remove("is-loading"));
         }
       });
     });
@@ -199,13 +213,13 @@
             displayName: theme.displayName,
             accentTintHex: theme.accentTintHex,
             imageURL: image.file,
-            timerScreenshotURL: `assets/img/appstore-captures/timer-${theme.id}.png`,
-            statsScreenshotURL: `assets/img/appstore-captures/stats-${theme.id}.png`,
+            timerScreenshotURL: screenshotURL(`assets/img/appstore-captures/timer-${theme.id}.png`),
+            statsScreenshotURL: screenshotURL(`assets/img/appstore-captures/stats-${theme.id}.png`),
             featureScreenshots: {
-              timer: `assets/img/appstore-captures/feature-timer-${theme.id}.png`,
-              health: `assets/img/appstore-captures/feature-health-${theme.id}.png`,
-              stats: `assets/img/appstore-captures/feature-stats-${theme.id}.png`,
-              themes: `assets/img/appstore-captures/feature-themes-${theme.id}.png`
+              timer: screenshotURL(`assets/img/appstore-captures/feature-timer-${theme.id}.png`),
+              health: screenshotURL(`assets/img/appstore-captures/feature-health-${theme.id}.png`),
+              stats: screenshotURL(`assets/img/appstore-captures/feature-stats-${theme.id}.png`),
+              themes: screenshotURL(`assets/img/appstore-captures/feature-themes-${theme.id}.png`)
             }
           };
         })
