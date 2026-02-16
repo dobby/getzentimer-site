@@ -28,6 +28,9 @@
     phoneDeck: document.getElementById("zt-phone-deck"),
     phoneCards: Array.from(document.querySelectorAll("[data-deck-phone]")),
     themeButtons: Array.from(document.querySelectorAll("[data-theme-option]")),
+    featureScreens: Array.from(document.querySelectorAll("[data-feature-screen]")),
+    lightbox: document.getElementById("zt-lightbox"),
+    lightboxImg: document.getElementById("zt-lightbox-img"),
     year: document.querySelector("[data-year]")
   };
 
@@ -45,6 +48,7 @@
     setupThemeCards();
     setupDeckRotation();
     setupDeckInteraction();
+    setupLightbox();
     document.addEventListener("visibilitychange", handleVisibilityChange);
     void initBackgroundRotation();
   }
@@ -196,7 +200,13 @@
             accentTintHex: theme.accentTintHex,
             imageURL: image.file,
             timerScreenshotURL: `assets/img/appstore-captures/timer-${theme.id}.png`,
-            statsScreenshotURL: `assets/img/appstore-captures/stats-${theme.id}.png`
+            statsScreenshotURL: `assets/img/appstore-captures/stats-${theme.id}.png`,
+            featureScreenshots: {
+              timer: `assets/img/appstore-captures/feature-timer-${theme.id}.png`,
+              health: `assets/img/appstore-captures/feature-health-${theme.id}.png`,
+              stats: `assets/img/appstore-captures/feature-stats-${theme.id}.png`,
+              themes: `assets/img/appstore-captures/feature-themes-${theme.id}.png`
+            }
           };
         })
         .filter(Boolean);
@@ -260,7 +270,12 @@
 
     const normalizedIndex = ((index % state.themes.length) + state.themes.length) % state.themes.length;
     const theme = state.themes[normalizedIndex];
-    await preloadImage(theme.imageURL);
+    await Promise.all([
+      preloadImage(theme.imageURL),
+      preloadImage(theme.timerScreenshotURL),
+      preloadImage(theme.statsScreenshotURL),
+      ...Object.values(theme.featureScreenshots).map(preloadImage)
+    ]);
 
     if (!state.backgroundInitialized || !animateBackground || dom.bgLayers.length < 2) {
       dom.bgLayers.forEach((layer) => {
@@ -301,6 +316,7 @@
 
   function updateThemeUI(theme) {
     updateShowcaseScreens(theme);
+    updateFeatureScreens(theme);
 
     dom.themeButtons.forEach((button) => {
       const isActive = button.getAttribute("data-theme-option") === theme.id;
@@ -337,7 +353,59 @@
       screen.src = newSrc;
       screen.alt = altText;
       screen.classList.remove("is-fading");
-    }, 350);
+    }, 500);
+  }
+
+  function updateFeatureScreens(theme) {
+    dom.featureScreens.forEach((screen) => {
+      const key = screen.getAttribute("data-feature-screen");
+      const newSrc = theme.featureScreenshots[key];
+      if (!newSrc) return;
+      if (screen.src.endsWith(newSrc.replace(/^.*\//, ""))) return;
+
+      if (prefersReducedMotion) {
+        screen.src = newSrc;
+        screen.alt = `ZenTimer ${key} in ${theme.displayName} theme`;
+        return;
+      }
+
+      screen.classList.add("is-fading");
+      setTimeout(() => {
+        screen.src = newSrc;
+        screen.alt = `ZenTimer ${key} in ${theme.displayName} theme`;
+        screen.classList.remove("is-fading");
+      }, 500);
+    });
+  }
+
+  function setupLightbox() {
+    if (!dom.lightbox || !dom.lightboxImg) return;
+
+    dom.featureScreens.forEach((screen) => {
+      screen.parentElement.addEventListener("click", () => {
+        dom.lightboxImg.src = screen.src;
+        dom.lightboxImg.alt = screen.alt;
+        dom.lightbox.classList.add("is-open");
+        dom.lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    dom.lightbox.addEventListener("click", (e) => {
+      if (e.target === dom.lightbox || e.target.classList.contains("zt-lightbox-close")) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && dom.lightbox.classList.contains("is-open")) {
+        closeLightbox();
+      }
+    });
+  }
+
+  function closeLightbox() {
+    dom.lightbox.classList.remove("is-open");
+    dom.lightbox.setAttribute("aria-hidden", "true");
   }
 
   function setupDeckRotation() {

@@ -64,6 +64,8 @@
       };
     </script>
 
+    <meta name="robots" content="index, follow" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -87,6 +89,46 @@
         "url": "https://getzentimer.com/"
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does ZenTimer include guided meditations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. ZenTimer is intentionally a simple meditation timer without guided content."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does ZenTimer use Apple Health?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Meditation sessions can sync to Apple Health for mindfulness history and stats continuity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ZenTimer a social meditation app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No social features are required. The app is built for private, distraction-free practice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does pricing work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The core app is free. Optional support purchases help fund ongoing visual and product improvements."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="zt-site">
@@ -100,7 +142,6 @@
       <main class="zt-shell">
         <div class="container-zt">
           <header class="zt-hero" data-reveal>
-            <span class="zt-eyebrow"><span class="zt-eyebrow-dot"></span>Built for silence</span>
             <h1>Simple meditation timing, beautiful focus, real progress.</h1>
             <p>
               ZenTimer is a minimalist meditation timer for iPhone. No guided meditations. No social feed. No noise.
@@ -135,6 +176,7 @@
 
             <p class="zt-hero-note">
               Free to use. Optional support purchases help sustain development and fund new premium visual themes.
+              <a href="support.html#support-zentimer">Learn where your support goes</a>.
             </p>
 
             <div class="zt-theme-showcase" data-reveal>
@@ -193,7 +235,7 @@
           </header>
 
           <section id="features" class="zt-section zt-divider" data-reveal>
-            <h2>Meditation features that keep the practice simple</h2>
+            <h2>Features</h2>
             <p>
               ZenTimer focuses on quality timing and continuity of practice. Every feature is built to reduce distraction,
               not increase it.
@@ -201,24 +243,44 @@
 
             <div class="zt-feature-grid">
               <article class="zt-feature zt-glass" data-reveal>
+                <div class="zt-feature-screenshot">
+                  <img class="zt-feature-screen" data-feature-screen="timer"
+                    src="assets/img/appstore-captures/feature-timer-forest.png"
+                    alt="ZenTimer timer in Forest theme" loading="lazy" />
+                </div>
                 <h3>Precision Timer + Bells</h3>
                 <p>
                   Fixed interval bells, custom marker bells, optional starting/end bells, and support for infinite sessions.
                 </p>
               </article>
               <article class="zt-feature zt-glass" data-reveal>
+                <div class="zt-feature-screenshot">
+                  <img class="zt-feature-screen" data-feature-screen="health"
+                    src="assets/img/appstore-captures/feature-health-forest.png"
+                    alt="ZenTimer Apple Health in Forest theme" loading="lazy" />
+                </div>
                 <h3>Apple Health Integration</h3>
                 <p>
                   Mindfulness sessions are written to Apple Health so your stats and practice history stay in your existing ecosystem.
                 </p>
               </article>
               <article class="zt-feature zt-glass" data-reveal>
+                <div class="zt-feature-screenshot">
+                  <img class="zt-feature-screen" data-feature-screen="stats"
+                    src="assets/img/appstore-captures/feature-stats-forest.png"
+                    alt="ZenTimer stats in Forest theme" loading="lazy" />
+                </div>
                 <h3>Clean Progress Stats</h3>
                 <p>
                   Track minutes, active days, session counts, and trends across day, week, month, and all-time views.
                 </p>
               </article>
               <article class="zt-feature zt-glass" data-reveal>
+                <div class="zt-feature-screenshot">
+                  <img class="zt-feature-screen" data-feature-screen="themes"
+                    src="assets/img/appstore-captures/feature-themes-forest.png"
+                    alt="ZenTimer themes in Forest theme" loading="lazy" />
+                </div>
                 <h3>Glass + Theme Atmosphere</h3>
                 <p>
                   A calm frosted glass interface and immersive background themes that make sessions visually grounded without clutter.
@@ -267,7 +329,7 @@
               </article>
               <article class="zt-faq-item zt-glass" data-reveal>
                 <h3>How does pricing work?</h3>
-                <p>The core app is free. Optional support purchases help fund ongoing visual and product improvements.</p>
+                <p>The core app is free. Optional support purchases help fund ongoing visual and product improvements. <a href="support.html#support-zentimer">See the full cost breakdown</a>.</p>
               </article>
             </div>
           </section>
@@ -288,6 +350,11 @@
               >
             </span>
           </footer>
+        </div>
+
+        <div class="zt-lightbox" id="zt-lightbox" aria-hidden="true" role="dialog">
+          <button class="zt-lightbox-close" aria-label="Close preview">&times;</button>
+          <img class="zt-lightbox-img" id="zt-lightbox-img" src="" alt="" />
         </div>
       </main>
     </div>

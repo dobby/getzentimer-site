@@ -121,35 +121,12 @@ a {
   grid-column: 1;
 }
 
-.zt-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 999px;
-  padding: 0.35rem 0.8rem;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  color: rgba(247, 249, 255, 0.94);
-  font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.zt-eyebrow-dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 999px;
-  background: var(--theme-accent-soft);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--theme-accent) 22%, transparent);
-}
-
 .zt-hero h1 {
   font-family: "Fraunces", "Iowan Old Style", serif;
   font-size: clamp(2rem, 5.4vw, 4.35rem);
   line-height: 1.06;
   letter-spacing: 0.012em;
-  margin: 1rem 0 0.95rem;
+  margin: 0 0 0.95rem;
   max-width: 18ch;
 }
 
@@ -170,6 +147,12 @@ a {
   margin-top: 0.95rem;
   color: rgba(239, 244, 255, 0.7);
   font-size: 0.9rem;
+}
+
+.zt-hero-note a {
+  color: var(--theme-accent-soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* ── Theme Showcase ────────────────────────────── */
@@ -242,7 +225,7 @@ a {
 
 .zt-showcase-device .device-screen {
   object-fit: cover;
-  transition: opacity 350ms ease;
+  transition: opacity 500ms ease;
 }
 
 .zt-showcase-device .device-screen.is-fading {
@@ -379,7 +362,76 @@ a {
   font-size: 0.92rem;
 }
 
+.zt-feature-screenshot {
+  float: right;
+  width: 80px;
+  margin: 0 0 0.5rem 0.75rem;
+  border-radius: 0.65rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
 
+.zt-feature-screenshot:hover {
+  transform: scale(1.06);
+}
+
+.zt-feature-screen {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
+  transition: opacity 500ms ease;
+}
+
+.zt-feature-screen.is-fading {
+  opacity: 0;
+}
+
+.zt-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+
+.zt-lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.zt-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 150ms ease;
+}
+
+.zt-lightbox-close:hover {
+  opacity: 1;
+}
+
+.zt-lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
 
 .zt-pricing {
   display: grid;
