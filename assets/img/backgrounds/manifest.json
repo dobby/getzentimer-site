@@ -1,0 +1,214 @@
+{
+  "generatedAt" : "2026-02-10T20:49:44Z",
+  "sourceShader" : "ZenTimer/Shaders/ProceduralBackground.metal",
+  "themes" : [
+    {
+      "accentTintHex" : "#478C5C",
+      "displayName" : "Forest",
+      "id" : "forest",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/forest-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/forest-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/forest-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 9137
+    },
+    {
+      "accentTintHex" : "#8C4747",
+      "displayName" : "Dawn",
+      "id" : "dawn",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/dawn-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/dawn-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/dawn-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 12804
+    },
+    {
+      "accentTintHex" : "#2E7380",
+      "displayName" : "Lagoon",
+      "id" : "lagoon",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/lagoon-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/lagoon-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/lagoon-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 18331
+    },
+    {
+      "accentTintHex" : "#3899B8",
+      "displayName" : "Glacier",
+      "id" : "glacier",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/glacier-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/glacier-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/glacier-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 71904
+    },
+    {
+      "accentTintHex" : "#B37A2E",
+      "displayName" : "Gold",
+      "id" : "gold",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/gold-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/gold-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/gold-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 101842
+    },
+    {
+      "accentTintHex" : "#46409F",
+      "displayName" : "Space",
+      "id" : "space",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/space-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/space-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/space-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 661154759
+    },
+    {
+      "accentTintHex" : "#1F533F",
+      "displayName" : "Aurora",
+      "id" : "aurora",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/aurora-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/aurora-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/aurora-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 839144549
+    },
+    {
+      "accentTintHex" : "#7B3E99",
+      "displayName" : "Nebula",
+      "id" : "nebula",
+      "images" : [
+        {
+          "file" : "assets/img/backgrounds/nebula-3840x2160.jpg",
+          "height" : 2160,
+          "resolution" : "3840x2160",
+          "width" : 3840
+        },
+        {
+          "file" : "assets/img/backgrounds/nebula-2560x1440.jpg",
+          "height" : 1440,
+          "resolution" : "2560x1440",
+          "width" : 2560
+        },
+        {
+          "file" : "assets/img/backgrounds/nebula-1600x900.jpg",
+          "height" : 900,
+          "resolution" : "1600x900",
+          "width" : 1600
+        }
+      ],
+      "seed" : 900571350
+    }
+  ]
+}
