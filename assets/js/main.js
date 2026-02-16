@@ -29,8 +29,12 @@
     return canvas.toDataURL("image/webp").indexOf("data:image/webp") === 0;
   })();
 
+  function toWebP(path) {
+    return supportsWebP ? path.replace(/\.(png|jpe?g)$/, ".webp") : path;
+  }
+
   function screenshotURL(path) {
-    return supportsWebP ? path.replace(/\.png$/, ".webp") : path;
+    return toWebP(path);
   }
 
   function updatePictureSource(img, newSrc) {
@@ -169,6 +173,13 @@
     if (dom.year) {
       dom.year.textContent = String(new Date().getFullYear());
     }
+    const publishEl = document.querySelector("[data-publish-date]");
+    if (publishEl) {
+      const stamp = document.documentElement.getAttribute("data-build-date");
+      if (stamp) {
+        publishEl.textContent = `Published ${stamp}`;
+      }
+    }
   }
 
   function setupFocusPulse() {
@@ -221,7 +232,7 @@
             id: theme.id,
             displayName: theme.displayName,
             accentTintHex: theme.accentTintHex,
-            imageURL: image.file,
+            imageURL: toWebP(image.file),
             timerScreenshotURL: screenshotURL(`assets/img/appstore-captures/timer-${theme.id}.png`),
             statsScreenshotURL: screenshotURL(`assets/img/appstore-captures/stats-${theme.id}.png`),
             featureScreenshots: {

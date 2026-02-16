@@ -3,3 +3,5 @@
 # Generated WebP images (built in CI via tools/optimize-images.sh)
 assets/img/appstore-captures/*.webp
 assets/img/screenshots/*.webp
+*.iml
+.idea

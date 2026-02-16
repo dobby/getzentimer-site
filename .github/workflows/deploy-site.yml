@@ -27,6 +27,11 @@ jobs:
       - name: Generate optimized WebP images
         run: bash tools/optimize-images.sh
 
+      - name: Stamp build date
+        run: |
+          BUILD_DATE=$(date -u +"%b %d, %Y")
+          sed -i "s/<html lang=\"en\">/<html lang=\"en\" data-build-date=\"$BUILD_DATE\">/" index.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

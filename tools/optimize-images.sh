@@ -11,6 +11,7 @@ QUALITY=80
 DIRS=(
   "assets/img/appstore-captures"
   "assets/img/screenshots"
+  "assets/img/backgrounds"
 )
 
 command -v cwebp >/dev/null 2>&1 || { echo "Error: cwebp not found. Install with: brew install webp (macOS) or apt-get install webp (Linux)"; exit 1; }
