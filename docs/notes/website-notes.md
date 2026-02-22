@@ -8,13 +8,17 @@
 - **Heading colors should be explicit in `assets/css/styles.css`.** Because index loads Bootstrap asynchronously, set title colors directly (for `h1/h2/h3` sections) instead of relying on defaults.
 - **Reveal animation must fail open.** Keep `[data-reveal]` visible by default and only apply hidden pre-state under a JS guard class (e.g. `.js`) so the hero/header never disappears if JS fails.
 - **Footer publish date needs a fallback.** If `data-build-date` is missing, render from `document.lastModified` (or current date fallback) so publish text is never blank.
+- **Index non-button links should stay theme-reactive without relying on `color-mix()`.** Keep content/footer links in `.zt-shell` driven directly by `--theme-accent` (+ explicit `:visited`) so href text never falls back to default browser blue where `color-mix()` support is inconsistent.
+- **Footer link groups may need explicit state overrides.** For `.zt-footer-links a`, define `:link/:visited/:hover/:active` with theme color (and `!important` if needed) to beat Bootstrap/UA link defaults.
 - **Support URL should expose real contact details.** App Store support pages should include a real contact method; keep spam risk lower by rendering an obfuscated visible address and generating `mailto:` via JS fragments.
 - **Button style is intentionally unified to simple ghost anchors.** Keep CTA/button markup as plain text inside `<a class="zt-glass-btn zt-glass-btn--ghost">…</a>` so all page buttons match.
+- **iOS Safari status bar color depends on `<meta name="theme-color">`.** Keep a dark theme color meta tag in each page head (`index.html`, `privacy.html`, `support.html`) so the top browser/status bar does not render with a light default.
 - **`no-backdrop` fallback must be preserved.** Switches to opaque surfaces when `backdrop-filter` is unsupported. Don't remove this class.
 - **`prefers-reduced-motion` disables background rotation.** Theme crossfade stops; keep this behavior.
 - **Hero deck animation also stops for reduced motion.** The 10s front/back phone swap must not run when reduced motion is enabled.
 - **Hero phone cards are interactive buttons.** The back phone can be tapped/clicked to bring it to front, and this should restart the 10s auto-swap timer.
 - **Several placeholder URLs must be replaced before launch** — see Launch Checklist below.
+- **Feature-card screenshots can silently become duplicates.** Verify `feature-health-*` and `feature-themes-*` are not copies of timer captures when refreshing assets; check image hashes/dimensions after any screenshot export.
 
 ## How it works
 
