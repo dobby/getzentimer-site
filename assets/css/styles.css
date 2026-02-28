@@ -45,6 +45,30 @@ a {
   color: inherit;
 }
 
+.zt-shell a:not(.zt-glass-btn):not(.zt-lightbox-close) {
+  color: var(--theme-accent);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 2px;
+  transition: color 180ms ease, text-decoration-color 180ms ease, outline-color 180ms ease, opacity 180ms ease;
+}
+
+.zt-shell a:not(.zt-glass-btn):not(.zt-lightbox-close):visited {
+  color: var(--theme-accent);
+  text-decoration-color: currentColor;
+}
+
+.zt-shell a:not(.zt-glass-btn):not(.zt-lightbox-close):hover {
+  color: var(--theme-accent);
+  text-decoration-color: currentColor;
+  opacity: 0.88;
+}
+
+.zt-shell a:not(.zt-glass-btn):not(.zt-lightbox-close):focus-visible {
+  outline: 2px solid var(--theme-accent);
+  outline-offset: 2px;
+}
+
 .zt-site {
   position: relative;
   isolation: isolate;
@@ -148,12 +172,6 @@ a {
   margin-top: 0.95rem;
   color: rgba(239, 244, 255, 0.7);
   font-size: 0.9rem;
-}
-
-.zt-hero-note a {
-  color: var(--theme-accent-soft);
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 /* ── Theme Showcase ────────────────────────────── */
@@ -514,12 +532,24 @@ a {
 }
 
 .zt-footer a {
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+  text-decoration-thickness: 1px;
+}
+
+.zt-footer .zt-footer-links a,
+.zt-footer .zt-footer-links a:link,
+.zt-footer .zt-footer-links a:visited,
+.zt-footer .zt-footer-links a:hover,
+.zt-footer .zt-footer-links a:active {
+  color: var(--theme-accent) !important;
+  text-decoration-color: currentColor;
 }
 
 .zt-footer a:hover {
-  border-color: rgba(255, 255, 255, 0.55);
+  text-decoration-thickness: 2px;
+}
+
+.zt-footer a:focus-visible {
+  text-decoration-thickness: 2px;
 }
 
 .zt-footer-published {

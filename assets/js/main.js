@@ -2,7 +2,7 @@
   document.documentElement.classList.add("js");
 
   const config = {
-    APP_STORE_URL: "https://apps.apple.com/app/id0000000000",
+    APP_STORE_URL: "https://apps.apple.com/app/id6759222838",
     CANONICAL_URL: "https://getzentimer.com/",
     BACKGROUND_ROTATION_INTERVAL_MS: 24000,
     BACKGROUND_CROSSFADE_MS: 1800,
