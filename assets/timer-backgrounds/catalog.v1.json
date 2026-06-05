@@ -10,7 +10,7 @@
       "isListed": true,
       "accentHex": "#2F4A42",
       "bottomLuminance": 0.0118,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": 0.349,
       "variants": [
         {
           "role": "thumbnail",
@@ -40,7 +40,7 @@
       "isListed": true,
       "accentHex": "#4E4C41",
       "bottomLuminance": 0.0402,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": 0.208,
       "variants": [
         {
           "role": "thumbnail",
@@ -70,7 +70,7 @@
       "isListed": true,
       "accentHex": "#34483B",
       "bottomLuminance": 0.0473,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": 0.606,
       "variants": [
         {
           "role": "thumbnail",
@@ -100,7 +100,7 @@
       "isListed": true,
       "accentHex": "#688370",
       "bottomLuminance": 0.0516,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.253,
       "variants": [
         {
           "role": "thumbnail",
@@ -130,7 +130,7 @@
       "isListed": true,
       "accentHex": "#6A5B41",
       "bottomLuminance": 0.0046,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.347,
       "variants": [
         {
           "role": "thumbnail",
@@ -160,7 +160,7 @@
       "isListed": true,
       "accentHex": "#794917",
       "bottomLuminance": 0.2462,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.457,
       "variants": [
         {
           "role": "thumbnail",
@@ -190,7 +190,7 @@
       "isListed": true,
       "accentHex": "#65515B",
       "bottomLuminance": 0.0806,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": 0.279,
       "variants": [
         {
           "role": "thumbnail",
@@ -220,7 +220,7 @@
       "isListed": true,
       "accentHex": "#918A85",
       "bottomLuminance": 0.3049,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.291,
       "variants": [
         {
           "role": "thumbnail",
@@ -250,7 +250,7 @@
       "isListed": true,
       "accentHex": "#757E7D",
       "bottomLuminance": 0.2832,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.569,
       "variants": [
         {
           "role": "thumbnail",
@@ -280,7 +280,7 @@
       "isListed": true,
       "accentHex": "#262519",
       "bottomLuminance": 0.0074,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.309,
       "variants": [
         {
           "role": "thumbnail",
@@ -310,7 +310,7 @@
       "isListed": true,
       "accentHex": "#8A7A64",
       "bottomLuminance": 0.1121,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.432,
       "variants": [
         {
           "role": "thumbnail",
@@ -340,7 +340,7 @@
       "isListed": true,
       "accentHex": "#231C11",
       "bottomLuminance": 0.0082,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.296,
       "variants": [
         {
           "role": "thumbnail",
@@ -370,7 +370,7 @@
       "isListed": true,
       "accentHex": "#564F40",
       "bottomLuminance": 0.036,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.639,
       "variants": [
         {
           "role": "thumbnail",
@@ -400,7 +400,7 @@
       "isListed": true,
       "accentHex": "#2B628F",
       "bottomLuminance": 0.0442,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": 0.15,
       "variants": [
         {
           "role": "thumbnail",
@@ -430,7 +430,7 @@
       "isListed": true,
       "accentHex": "#2A5051",
       "bottomLuminance": 0.0054,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.113,
       "variants": [
         {
           "role": "thumbnail",
@@ -460,7 +460,7 @@
       "isListed": true,
       "accentHex": "#283135",
       "bottomLuminance": 0.0011,
-      "defaultOffsetY": 0.0,
+      "defaultOffsetY": -0.188,
       "variants": [
         {
           "role": "thumbnail",

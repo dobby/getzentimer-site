@@ -7,7 +7,7 @@
       "category": "Gateway",
       "sortOrder": 10,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.349
     },
     {
       "id": "gateway-woman",
@@ -16,7 +16,7 @@
       "category": "Gateway",
       "sortOrder": 20,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.208
     },
     {
       "id": "journey-mushrooms",
@@ -25,7 +25,7 @@
       "category": "Journey",
       "sortOrder": 30,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.606
     },
     {
       "id": "journey-outlook",
@@ -34,7 +34,7 @@
       "category": "Journey",
       "sortOrder": 40,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.253
     },
     {
       "id": "journey-woman",
@@ -43,7 +43,7 @@
       "category": "Journey",
       "sortOrder": 50,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.347
     },
     {
       "id": "meditator-gold",
@@ -52,7 +52,7 @@
       "category": "Meditator",
       "sortOrder": 60,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.457
     },
     {
       "id": "meditator-moon",
@@ -61,7 +61,7 @@
       "category": "Meditator",
       "sortOrder": 70,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.279
     },
     {
       "id": "psychedelic-mind",
@@ -70,7 +70,7 @@
       "category": "Psychedelic",
       "sortOrder": 80,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.291
     },
     {
       "id": "psychedelic-priests",
@@ -79,7 +79,7 @@
       "category": "Psychedelic",
       "sortOrder": 90,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.569
     },
     {
       "id": "shamanism-shaman",
@@ -88,7 +88,7 @@
       "category": "Shamanism",
       "sortOrder": 100,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.309
     },
     {
       "id": "shamanism-spirit-quest",
@@ -97,7 +97,7 @@
       "category": "Shamanism",
       "sortOrder": 110,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.432
     },
     {
       "id": "shamanism-warrior",
@@ -106,7 +106,7 @@
       "category": "Shamanism",
       "sortOrder": 120,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.296
     },
     {
       "id": "subconscious-darkness",
@@ -115,7 +115,7 @@
       "category": "Subconscious",
       "sortOrder": 130,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.639
     },
     {
       "id": "subconscious-falling",
@@ -124,7 +124,7 @@
       "category": "Subconscious",
       "sortOrder": 140,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.15
     },
     {
       "id": "subconscious-water",
@@ -133,7 +133,7 @@
       "category": "Subconscious",
       "sortOrder": 150,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.113
     },
     {
       "id": "subconscious-waterman",
@@ -142,7 +142,7 @@
       "category": "Subconscious",
       "sortOrder": 160,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.188
     }
   ]
 }
