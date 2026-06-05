@@ -51,8 +51,62 @@
       "displayName": "Meditator Gold",
       "category": "Meditator",
       "sortOrder": 60,
-      "isListed": true,
+      "isListed": false,
       "defaultOffsetY": -0.457
+    },
+    {
+      "id": "meditator-close-amber-figure",
+      "sourceFile": "meditator-close-amber-figure.png",
+      "displayName": "Close Amber Figure",
+      "category": "Meditator",
+      "sortOrder": 61,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "meditator-distant-lunar-shoreline",
+      "sourceFile": "meditator-distant-lunar-shoreline.png",
+      "displayName": "Distant Lunar Shoreline",
+      "category": "Meditator",
+      "sortOrder": 62,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "meditator-candle-cave-stillness",
+      "sourceFile": "meditator-candle-cave-stillness.png",
+      "displayName": "Candle Cave Stillness",
+      "category": "Meditator",
+      "sortOrder": 63,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "meditator-forest-breath-clearing",
+      "sourceFile": "meditator-forest-breath-clearing.png",
+      "displayName": "Forest Breath Clearing",
+      "category": "Meditator",
+      "sortOrder": 64,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "meditator-inner-cosmos-silhouette",
+      "sourceFile": "meditator-inner-cosmos-silhouette.png",
+      "displayName": "Inner Cosmos Silhouette",
+      "category": "Meditator",
+      "sortOrder": 65,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "meditator-dawn-veil-abstraction",
+      "sourceFile": "meditator-dawn-veil-abstraction.png",
+      "displayName": "Dawn Veil Abstraction",
+      "category": "Meditator",
+      "sortOrder": 66,
+      "isListed": true,
+      "defaultOffsetY": 0.0
     },
     {
       "id": "meditator-moon",
@@ -60,7 +114,7 @@
       "displayName": "Meditator Moon",
       "category": "Meditator",
       "sortOrder": 70,
-      "isListed": true,
+      "isListed": false,
       "defaultOffsetY": 0.279
     },
     {

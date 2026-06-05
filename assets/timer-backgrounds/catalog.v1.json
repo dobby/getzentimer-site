@@ -157,7 +157,7 @@
       "displayName": "Meditator Gold",
       "category": "Meditator",
       "sortOrder": 60,
-      "isListed": true,
+      "isListed": false,
       "accentHex": "#794917",
       "bottomLuminance": 0.2462,
       "defaultOffsetY": -0.457,
@@ -183,11 +183,191 @@
       ]
     },
     {
+      "id": "meditator-close-amber-figure",
+      "displayName": "Close Amber Figure",
+      "category": "Meditator",
+      "sortOrder": 61,
+      "isListed": true,
+      "accentHex": "#301B08",
+      "bottomLuminance": 0.0129,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-close-amber-figure.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 22620,
+          "sha256": "fcc87015955b7e2adfed90cc1e1e389e9b3a7061bd91217202ac9366726c0c8e"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-close-amber-figure.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 225560,
+          "sha256": "f4d307f0604ea7db30380b58f35bb5cc29319d66f423a1eb02ef006dcbff5711"
+        }
+      ]
+    },
+    {
+      "id": "meditator-distant-lunar-shoreline",
+      "displayName": "Distant Lunar Shoreline",
+      "category": "Meditator",
+      "sortOrder": 62,
+      "isListed": true,
+      "accentHex": "#2E2A33",
+      "bottomLuminance": 0.0189,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-distant-lunar-shoreline.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 10020,
+          "sha256": "b428837c099c46100c9522374d3c6043d84562a70219ab060bda28370ae3e486"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-distant-lunar-shoreline.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 88600,
+          "sha256": "650c246d8f7d6acd323abb43601ff0777f72d8eaae07f75ebdd19fe9a000b7ab"
+        }
+      ]
+    },
+    {
+      "id": "meditator-candle-cave-stillness",
+      "displayName": "Candle Cave Stillness",
+      "category": "Meditator",
+      "sortOrder": 63,
+      "isListed": true,
+      "accentHex": "#140C08",
+      "bottomLuminance": 0.0041,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-candle-cave-stillness.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 7914,
+          "sha256": "2199f649a3014d9e2bebc214a7ff381b54c06d69903a2cd615d45a0d36f6b490"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-candle-cave-stillness.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 95570,
+          "sha256": "9e3085324d05951179e7afca48ca430c2669c2b44be2092c729cdd63b9edde99"
+        }
+      ]
+    },
+    {
+      "id": "meditator-forest-breath-clearing",
+      "displayName": "Forest Breath Clearing",
+      "category": "Meditator",
+      "sortOrder": 64,
+      "isListed": true,
+      "accentHex": "#102419",
+      "bottomLuminance": 0.0086,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-forest-breath-clearing.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 10878,
+          "sha256": "5f92a697212cec56ac47c185f625bfcb635154a2ba9772bea2eb152dd436a7ec"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-forest-breath-clearing.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 111332,
+          "sha256": "3af716fdc84442c95bb64776acc259652dafdd01e92b384ff5ff566019b64325"
+        }
+      ]
+    },
+    {
+      "id": "meditator-inner-cosmos-silhouette",
+      "displayName": "Inner Cosmos Silhouette",
+      "category": "Meditator",
+      "sortOrder": 65,
+      "isListed": true,
+      "accentHex": "#080F1C",
+      "bottomLuminance": 0.0027,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-inner-cosmos-silhouette.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 7944,
+          "sha256": "e6ad8b68e763758b1f1ff4bd8bd65890b5a2e8bd85b1ae971553993d0689a3fa"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-inner-cosmos-silhouette.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 88436,
+          "sha256": "d066e6c37a555c5d016d435a051746c3b789e5e65ad0b4b93a92ca4731fd6884"
+        }
+      ]
+    },
+    {
+      "id": "meditator-dawn-veil-abstraction",
+      "displayName": "Dawn Veil Abstraction",
+      "category": "Meditator",
+      "sortOrder": 66,
+      "isListed": true,
+      "accentHex": "#4E3A3B",
+      "bottomLuminance": 0.0188,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-dawn-veil-abstraction.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 7914,
+          "sha256": "05e199a4ef7d52b94f4414effce6a5928aae2d2d3527fa2e40a647e698c7d241"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-dawn-veil-abstraction.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 79078,
+          "sha256": "9c97b4b485097995ad811640de7dc01248e23706af5606bc3e2924b13f668933"
+        }
+      ]
+    },
+    {
       "id": "meditator-moon",
       "displayName": "Meditator Moon",
       "category": "Meditator",
       "sortOrder": 70,
-      "isListed": true,
+      "isListed": false,
       "accentHex": "#65515B",
       "bottomLuminance": 0.0806,
       "defaultOffsetY": 0.279,
