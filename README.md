@@ -19,7 +19,9 @@ Then open: `http://127.0.0.1:8765/index.html`
 - `assets/css/styles.css` — custom styling + glass effects
 - `assets/js/main.js` — CTA, background rotation, motion, progressive enhancement
 - `assets/img/backgrounds/` — generated Metal backgrounds + `manifest.json`
+- `assets/timer-backgrounds/` — hosted iOS timer background preset catalog, sources, and generated WebP variants
 - `tools/export_metal_backgrounds.swift` — background export utility
+- `tools/generate_timer_background_catalog.py` — timer background preset catalog generator/validator
 
 ## Update Launch Settings
 
@@ -50,6 +52,34 @@ This generates:
 - 3 sizes each (`3840x2160`, `2560x1440`, `1600x900`)
 - `assets/img/backgrounds/manifest.json`
 - `assets/img/backgrounds/preview-grid.jpg`
+
+## Regenerate Timer Background Catalog
+
+Timer background presets consumed by the iOS app are published from:
+
+```text
+assets/timer-backgrounds/catalog.v1.json
+```
+
+Curated source metadata lives in:
+
+```text
+assets/timer-backgrounds/source/metadata.json
+```
+
+From repo root:
+
+```bash
+python3 tools/generate_timer_background_catalog.py
+python3 tools/generate_timer_background_catalog.py --check
+```
+
+Requirements:
+
+- ImageMagick (`magick`)
+- WebP tools (`cwebp`)
+
+The generator writes committed WebP variants under `assets/timer-backgrounds/variants/` and validates hashes, byte sizes, dimensions, required legacy IDs, and relative catalog paths. Source originals stay in the repo under `assets/timer-backgrounds/source/`; the Pages workflow excludes that source directory from the public `_site` artifact.
 
 ## GitHub Pages
 

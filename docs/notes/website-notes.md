@@ -21,6 +21,9 @@
 - **Several placeholder URLs must be replaced before launch** — see Launch Checklist below.
 - **Feature-card screenshots can silently become duplicates.** Verify `feature-health-*` and `feature-themes-*` are not copies of timer captures when refreshing assets; check image hashes/dimensions after any screenshot export.
 - **Prototype screenshots must be portable inside this repo.** If a design prototype references fresh captures from `/Users/eli/projects/personal/ZenTimer/tmp`, copy the selected assets into `assets/img/prototype/`, generate WebP companions when `cwebp` is available, and reference project-relative paths. Do not leave prototype HTML pointing at absolute app-repo paths.
+- **Timer preset catalog is separate from marketing backgrounds.** The iOS app consumes `assets/timer-backgrounds/catalog.v1.json`; do not mix this with `assets/img/backgrounds/manifest.json`, which drives the website hero/theme visuals.
+- **Committed timer catalog output must stay fresh.** After editing `assets/timer-backgrounds/source/metadata.json` or source images, run `python3 tools/generate_timer_background_catalog.py` and then `python3 tools/generate_timer_background_catalog.py --check`; Pages CI runs check mode and fails on stale hashes, dimensions, or missing legacy IDs.
+- **Source timer preset originals are repo-only.** The Pages workflow assembles `_site` and excludes `assets/timer-backgrounds/source/`; only `catalog.v1.json` and generated WebP variants should be public.
 
 ## How it works
 
@@ -32,6 +35,14 @@ Static site at repo root: `index.html`, `privacy.html`, `support.html`, `assets/
 - Renders six themes (`forest`, `dawn`, `lagoon`, `glacier`, `gold`, `space`) at three sizes (3840x2160, 2560x1440, 1600x900).
 - Outputs to `assets/img/backgrounds/`: JPG files + `manifest.json` + `preview-grid.jpg`.
 - Runtime: site fetches `manifest.json`, selects resolution by viewport + DPR. Crossfade between two background layers (24s interval, 1.8s transition). Accent tint from `accentTintHex` → `--theme-accent`.
+
+### Timer preset catalog
+- Generator: `tools/generate_timer_background_catalog.py`.
+- Curated metadata: `assets/timer-backgrounds/source/metadata.json`.
+- Source originals: `assets/timer-backgrounds/source/`.
+- App-consumed output: `assets/timer-backgrounds/catalog.v1.json` plus WebP variants under `assets/timer-backgrounds/variants/thumbs/` and `assets/timer-backgrounds/variants/phone/`.
+- The catalog keeps all legacy iOS timer preset IDs append-only so saved timers can resolve moved presets after bundled images are removed from the app.
+- GitHub Pages publishes from `_site`, excluding source originals, docs, and tools from the public artifact.
 
 ### Glass styling
 - Tokens: `--glass-bg`, `--glass-bg-strong`, `--glass-border`, `--glass-blur`, `--glass-shadow`.

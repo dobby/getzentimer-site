@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-05T09:45:52Z",
+  "presets": [
+    {
+      "id": "gateway-forest",
+      "displayName": "Gateway Forest",
+      "category": "Gateway",
+      "sortOrder": 10,
+      "isListed": true,
+      "accentHex": "#2F4A42",
+      "bottomLuminance": 0.0118,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/gateway-forest.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 26816,
+          "sha256": "8c13ffcf31555762743dfe29a035735370c320eddfab998dfa02d6bba5d75c67"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/gateway-forest.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 242948,
+          "sha256": "c620214646d7aeb58b9aeff5ff351c44142ef08479ed89dc4fc5d012875a932e"
+        }
+      ]
+    },
+    {
+      "id": "gateway-woman",
+      "displayName": "Gateway Woman",
+      "category": "Gateway",
+      "sortOrder": 20,
+      "isListed": true,
+      "accentHex": "#4E4C41",
+      "bottomLuminance": 0.0402,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/gateway-woman.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 47948,
+          "sha256": "0cb1ce2b11177cad536c40c10569bfda54c3ed286398d08decaff4f4d5777f3c"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/gateway-woman.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 320468,
+          "sha256": "5e7a2f7d30eb8abbfc37ee6a996f9b5a56180b5e06e820a212feaf515ed5fb4a"
+        }
+      ]
+    },
+    {
+      "id": "journey-mushrooms",
+      "displayName": "Journey Mushrooms",
+      "category": "Journey",
+      "sortOrder": 30,
+      "isListed": true,
+      "accentHex": "#34483B",
+      "bottomLuminance": 0.0473,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/journey-mushrooms.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 27424,
+          "sha256": "993e120b82865d45f6d7854692e824d46a42bcac9f8b8dea2547701a5930da30"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/journey-mushrooms.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 243878,
+          "sha256": "76e616663451a721c579791813c953b28f6857c9af6d1f10b215ef577fd23c64"
+        }
+      ]
+    },
+    {
+      "id": "journey-outlook",
+      "displayName": "Journey Outlook",
+      "category": "Journey",
+      "sortOrder": 40,
+      "isListed": true,
+      "accentHex": "#688370",
+      "bottomLuminance": 0.0516,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/journey-outlook.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 23320,
+          "sha256": "e137f77f31a480e1d02acc9d087279c44aeb292f81c8eb00f6b7e0553a47627d"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/journey-outlook.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 432258,
+          "sha256": "81df6d692bad8f89a2b6c874925d88a24ded77ee290f91ed340f9e654118b1d8"
+        }
+      ]
+    },
+    {
+      "id": "journey-woman",
+      "displayName": "Journey Woman",
+      "category": "Journey",
+      "sortOrder": 50,
+      "isListed": true,
+      "accentHex": "#6A5B41",
+      "bottomLuminance": 0.0046,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/journey-woman.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 11260,
+          "sha256": "9074ca3ca21ee288153e028b9e503d28da11d29139e2acd0b4a64fb712109910"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/journey-woman.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 77052,
+          "sha256": "3b76eb505b0684d2ffcacc5f932df6dbcbf4c9af95f8a7d852ae3f09a14822a5"
+        }
+      ]
+    },
+    {
+      "id": "meditator-gold",
+      "displayName": "Meditator Gold",
+      "category": "Meditator",
+      "sortOrder": 60,
+      "isListed": true,
+      "accentHex": "#794917",
+      "bottomLuminance": 0.2462,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-gold.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 40508,
+          "sha256": "8ab457d2e804c88e9f879062a1241982ed409ccb7dd38c48049c0f51d9326e20"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-gold.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 392132,
+          "sha256": "ddff2e7e780d0711fc7a484cbf52a3d243939350ae08adfc3020792ee655363e"
+        }
+      ]
+    },
+    {
+      "id": "meditator-moon",
+      "displayName": "Meditator Moon",
+      "category": "Meditator",
+      "sortOrder": 70,
+      "isListed": true,
+      "accentHex": "#65515B",
+      "bottomLuminance": 0.0806,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/meditator-moon.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 17252,
+          "sha256": "b6e24dbbfb800bf5d37fc1678a3642a700373e5e9d0262f78676724edbacf03d"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/meditator-moon.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 556536,
+          "sha256": "c74ab3b4565807a29e8d0df88e08bfbc6154a89be8888100a16d9c8714acfe8c"
+        }
+      ]
+    },
+    {
+      "id": "psychedelic-mind",
+      "displayName": "Psychedelic Mind",
+      "category": "Psychedelic",
+      "sortOrder": 80,
+      "isListed": true,
+      "accentHex": "#918A85",
+      "bottomLuminance": 0.3049,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/psychedelic-mind.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 68418,
+          "sha256": "d205455f387d988f7eec7d96ac7d2b7ad366f5d26694b01ef77d03eb6d34e9e0"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/psychedelic-mind.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 653528,
+          "sha256": "4f9eb7546d6df8ffabef1729ccb7718e27cf997c88c45a67a1aa70fc01fd9ca2"
+        }
+      ]
+    },
+    {
+      "id": "psychedelic-priests",
+      "displayName": "Psychedelic Priests",
+      "category": "Psychedelic",
+      "sortOrder": 90,
+      "isListed": true,
+      "accentHex": "#757E7D",
+      "bottomLuminance": 0.2832,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/psychedelic-priests.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 69230,
+          "sha256": "98cdd1a375c5f076aa36bf8c9b40689390863f449c9b3328c5cccebf9767df72"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/psychedelic-priests.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 658890,
+          "sha256": "353bb2ec8877a3b0b1252f2d2e653380a7b674bf428e01134cfa94a227c83ce6"
+        }
+      ]
+    },
+    {
+      "id": "shamanism-shaman",
+      "displayName": "Shamanism Shaman",
+      "category": "Shamanism",
+      "sortOrder": 100,
+      "isListed": true,
+      "accentHex": "#262519",
+      "bottomLuminance": 0.0074,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/shamanism-shaman.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 35550,
+          "sha256": "eb98e1e31a18d521f9fed40607d38dfdd9f6784fea9aab2d838741739d120bdf"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/shamanism-shaman.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 264082,
+          "sha256": "f6f3cdadaadf029be3d900e9984dbe63d5709a37810e9373ce70ee3c848cd1f9"
+        }
+      ]
+    },
+    {
+      "id": "shamanism-spirit-quest",
+      "displayName": "Shamanism Spirit Quest",
+      "category": "Shamanism",
+      "sortOrder": 110,
+      "isListed": true,
+      "accentHex": "#8A7A64",
+      "bottomLuminance": 0.1121,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/shamanism-spirit-quest.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 52680,
+          "sha256": "eb0e35b4753ab34d1d36f0ef93eb156ca6e18d2f563fbff9b68d7594bb0c6deb"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/shamanism-spirit-quest.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 451942,
+          "sha256": "d8019956fc7e0ec266850015024f596b0a9af0dd8cd9b95f9cc3a37288f39cff"
+        }
+      ]
+    },
+    {
+      "id": "shamanism-warrior",
+      "displayName": "Shamanism Warrior",
+      "category": "Shamanism",
+      "sortOrder": 120,
+      "isListed": true,
+      "accentHex": "#231C11",
+      "bottomLuminance": 0.0082,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/shamanism-warrior.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 25606,
+          "sha256": "b9b89f27c47c9353690fa8c82f1fa99810bc855622dd7cf486e6e197f1f02dda"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/shamanism-warrior.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 192270,
+          "sha256": "269f0b5e69c5f898afd69d76e6c53bb615436669050d6d737d9333062e4dd9f9"
+        }
+      ]
+    },
+    {
+      "id": "subconscious-darkness",
+      "displayName": "Subconscious Darkness",
+      "category": "Subconscious",
+      "sortOrder": 130,
+      "isListed": true,
+      "accentHex": "#564F40",
+      "bottomLuminance": 0.036,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/subconscious-darkness.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 72112,
+          "sha256": "74cb678f5ddc76b37f64a7ae3ccc3988844ce0f05c96e70192e35584e42ad345"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/subconscious-darkness.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 602476,
+          "sha256": "101cc625dfcaa42c7838806ea43e7451d7cc6e707a60911fdffcf3ef4ebc41a0"
+        }
+      ]
+    },
+    {
+      "id": "subconscious-falling",
+      "displayName": "Subconscious Falling",
+      "category": "Subconscious",
+      "sortOrder": 140,
+      "isListed": true,
+      "accentHex": "#2B628F",
+      "bottomLuminance": 0.0442,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/subconscious-falling.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 21818,
+          "sha256": "fe87a9e58abccfbcca6af92d36119418c020bd5cfec7322031eb38746493780f"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/subconscious-falling.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 261420,
+          "sha256": "6761a6709288490dcf107eb866fec6e8fc31f3c10a9692246a3ed5887d7626c8"
+        }
+      ]
+    },
+    {
+      "id": "subconscious-water",
+      "displayName": "Subconscious Water",
+      "category": "Subconscious",
+      "sortOrder": 150,
+      "isListed": true,
+      "accentHex": "#2A5051",
+      "bottomLuminance": 0.0054,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/subconscious-water.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 22242,
+          "sha256": "3f9cce9e8cc58c783cfc9aa55a07c09be2fef7cb348fb49bd9f4efa7b2295c09"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/subconscious-water.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 220806,
+          "sha256": "258887b603eb7ef453b8d7322618cf0831c3356cc2359bd2a9a89c4daa635350"
+        }
+      ]
+    },
+    {
+      "id": "subconscious-waterman",
+      "displayName": "Subconscious Waterman",
+      "category": "Subconscious",
+      "sortOrder": 160,
+      "isListed": true,
+      "accentHex": "#283135",
+      "bottomLuminance": 0.0011,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/subconscious-waterman.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 25258,
+          "sha256": "337bf8045bc264c598d20f9c21f96b143c55a8662ebcd3e16766c1f1c4c3fd52"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/subconscious-waterman.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 297522,
+          "sha256": "d14f9aba6dd6c5ebed2721758e57868e355e7316763dfca36c6e7470a8492867"
+        }
+      ]
+    }
+  ]
+}

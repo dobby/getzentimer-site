@@ -1,0 +1,148 @@
+{
+  "presets": [
+    {
+      "id": "gateway-forest",
+      "sourceFile": "gateway-forest.jpg",
+      "displayName": "Gateway Forest",
+      "category": "Gateway",
+      "sortOrder": 10,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "gateway-woman",
+      "sourceFile": "gateway-woman.jpg",
+      "displayName": "Gateway Woman",
+      "category": "Gateway",
+      "sortOrder": 20,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "journey-mushrooms",
+      "sourceFile": "journey-mushrooms.jpg",
+      "displayName": "Journey Mushrooms",
+      "category": "Journey",
+      "sortOrder": 30,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "journey-outlook",
+      "sourceFile": "journey-outlook.jpg",
+      "displayName": "Journey Outlook",
+      "category": "Journey",
+      "sortOrder": 40,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "journey-woman",
+      "sourceFile": "journey-woman.jpg",
+      "displayName": "Journey Woman",
+      "category": "Journey",
+      "sortOrder": 50,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "meditator-gold",
+      "sourceFile": "meditator-gold.jpg",
+      "displayName": "Meditator Gold",
+      "category": "Meditator",
+      "sortOrder": 60,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "meditator-moon",
+      "sourceFile": "meditator-moon.jpg",
+      "displayName": "Meditator Moon",
+      "category": "Meditator",
+      "sortOrder": 70,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "psychedelic-mind",
+      "sourceFile": "psychedelic-mind.jpg",
+      "displayName": "Psychedelic Mind",
+      "category": "Psychedelic",
+      "sortOrder": 80,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "psychedelic-priests",
+      "sourceFile": "psychedelic-priests.jpg",
+      "displayName": "Psychedelic Priests",
+      "category": "Psychedelic",
+      "sortOrder": 90,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "shamanism-shaman",
+      "sourceFile": "shamanism-shaman.jpg",
+      "displayName": "Shamanism Shaman",
+      "category": "Shamanism",
+      "sortOrder": 100,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "shamanism-spirit-quest",
+      "sourceFile": "shamanism-spirit-quest.jpg",
+      "displayName": "Shamanism Spirit Quest",
+      "category": "Shamanism",
+      "sortOrder": 110,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "shamanism-warrior",
+      "sourceFile": "shamanism-warrior.jpg",
+      "displayName": "Shamanism Warrior",
+      "category": "Shamanism",
+      "sortOrder": 120,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-darkness",
+      "sourceFile": "subconscious-darkness.jpg",
+      "displayName": "Subconscious Darkness",
+      "category": "Subconscious",
+      "sortOrder": 130,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-falling",
+      "sourceFile": "subconscious-falling.jpg",
+      "displayName": "Subconscious Falling",
+      "category": "Subconscious",
+      "sortOrder": 140,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-water",
+      "sourceFile": "subconscious-water.jpg",
+      "displayName": "Subconscious Water",
+      "category": "Subconscious",
+      "sortOrder": 150,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-waterman",
+      "sourceFile": "subconscious-waterman.jpg",
+      "displayName": "Subconscious Waterman",
+      "category": "Subconscious",
+      "sortOrder": 160,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    }
+  ]
+}

@@ -21,21 +21,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install WebP tools
-        run: sudo apt-get update && sudo apt-get install -y webp
+      - name: Install image tools
+        run: sudo apt-get update && sudo apt-get install -y imagemagick webp
 
       - name: Generate optimized WebP images
         run: bash tools/optimize-images.sh
+
+      - name: Validate timer background catalog
+        run: python3 tools/generate_timer_background_catalog.py --check
 
       - name: Stamp build date
         run: |
           BUILD_DATE=$(date -u +"%b %d, %Y")
           sed -i "s/<html lang=\"en\">/<html lang=\"en\" data-build-date=\"$BUILD_DATE\">/" index.html
 
+      - name: Assemble Pages artifact
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '.od-skills/' \
+            --exclude '_site/' \
+            --exclude 'assets/timer-backgrounds/source/' \
+            --exclude 'docs/' \
+            --exclude 'tools/' \
+            --exclude '*.artifact.json' \
+            ./ _site/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
   deploy:
     runs-on: ubuntu-latest
