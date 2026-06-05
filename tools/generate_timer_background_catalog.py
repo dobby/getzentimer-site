@@ -69,7 +69,7 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        require_tools()
+        require_tools(check_only=args.check)
         errors = validate_source_metadata()
         if args.check:
             errors.extend(validate_committed_catalog())
@@ -92,10 +92,13 @@ def main() -> int:
     return 0
 
 
-def require_tools() -> None:
-    for tool in ("magick", "cwebp"):
-        if shutil.which(tool) is None:
-            raise CatalogError(f"Missing required tool: {tool}")
+def require_tools(check_only: bool) -> None:
+    if image_identify_command() is None:
+        raise CatalogError("Missing required tool: magick or identify")
+    if not check_only and image_convert_command() is None:
+        raise CatalogError("Missing required tool: magick or convert")
+    if not check_only and shutil.which("cwebp") is None:
+        raise CatalogError("Missing required tool: cwebp")
 
 
 def validate_source_metadata() -> list[str]:
@@ -190,9 +193,12 @@ def generate_catalog() -> None:
 def render_variant(source_path: Path, output_path: Path, variant: VariantSpec) -> None:
     with tempfile.TemporaryDirectory() as temp_dir:
         intermediate = Path(temp_dir) / "variant.png"
+        convert_command = image_convert_command()
+        if convert_command is None:
+            raise CatalogError("Missing required tool: magick or convert")
         run(
-            [
-                "magick",
+            convert_command
+            + [
                 str(source_path),
                 "-auto-orient",
                 "-resize",
@@ -337,7 +343,10 @@ def existing_catalog_generated_at() -> str | None:
 
 
 def image_dimensions(path: Path) -> tuple[int, int]:
-    output = run(["magick", "identify", "-format", "%w %h", str(path)]).stdout.strip()
+    identify_command = image_identify_command()
+    if identify_command is None:
+        raise CatalogError("Missing required tool: magick or identify")
+    output = run(identify_command + ["-format", "%w %h", str(path)]).stdout.strip()
     width, height = output.split()
     return int(width), int(height)
 
@@ -367,8 +376,10 @@ def bottom_luminance(path: Path) -> float:
 
 
 def sample_rgb(path: Path, extra_args: list[str] | None = None) -> tuple[int, int, int]:
-    args = [
-        "magick",
+    convert_command = image_convert_command()
+    if convert_command is None:
+        raise CatalogError("Missing required tool: magick or convert")
+    args = convert_command + [
         str(path),
         "-auto-orient",
         "-alpha",
@@ -407,6 +418,22 @@ def run(args: list[str]) -> subprocess.CompletedProcess[str]:
         command = " ".join(args)
         output = (error.stderr or error.stdout or "").strip()
         raise CatalogError(f"command failed: {command}\n{output}") from error
+
+
+def image_convert_command() -> list[str] | None:
+    if shutil.which("magick") is not None:
+        return ["magick"]
+    if shutil.which("convert") is not None:
+        return ["convert"]
+    return None
+
+
+def image_identify_command() -> list[str] | None:
+    if shutil.which("magick") is not None:
+        return ["magick", "identify"]
+    if shutil.which("identify") is not None:
+        return ["identify"]
+    return None
 
 
 def relative(path: Path, root: Path = REPO_ROOT) -> str:
