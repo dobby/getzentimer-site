@@ -63,6 +63,96 @@
       ]
     },
     {
+      "id": "gateway-giant-forest-doors",
+      "displayName": "Giant Forest Doors",
+      "category": "Gateway",
+      "sortOrder": 21,
+      "isListed": true,
+      "accentHex": "#1E241C",
+      "bottomLuminance": 0.008,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/gateway-giant-forest-doors.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 36886,
+          "sha256": "0205b23e6480904db0812e82b516b60cd0c3360b53356ceb77cf88e20991b9d3"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/gateway-giant-forest-doors.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 368218,
+          "sha256": "86edd3a548603ad992879ec931e0668b46516b46453a8ec828c0efa16de7f001"
+        }
+      ]
+    },
+    {
+      "id": "gateway-root-woven-doors",
+      "displayName": "Root Woven Doors",
+      "category": "Gateway",
+      "sortOrder": 22,
+      "isListed": true,
+      "accentHex": "#25291A",
+      "bottomLuminance": 0.0124,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/gateway-root-woven-doors.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 50218,
+          "sha256": "9e0aaa20ed66efe1d0f5142941dcd5f795abba1e339a78c761f8114b04c3761f"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/gateway-root-woven-doors.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 465956,
+          "sha256": "c56a406288ec9a7f29dfe85308911bb192d073a2e28267c8f80cdad8a62c7cad"
+        }
+      ]
+    },
+    {
+      "id": "gateway-basalt-fern-doorway",
+      "displayName": "Basalt Fern Doorway",
+      "category": "Gateway",
+      "sortOrder": 23,
+      "isListed": true,
+      "accentHex": "#1A2217",
+      "bottomLuminance": 0.0063,
+      "defaultOffsetY": 0.0,
+      "variants": [
+        {
+          "role": "thumbnail",
+          "path": "variants/thumbs/gateway-basalt-fern-doorway.webp",
+          "mimeType": "image/webp",
+          "width": 360,
+          "height": 640,
+          "byteSize": 36392,
+          "sha256": "02703d628d9723071b41ad6680abb3203300cc201b13389bb915ba03721a049e"
+        },
+        {
+          "role": "phone",
+          "path": "variants/phone/gateway-basalt-fern-doorway.webp",
+          "mimeType": "image/webp",
+          "width": 1290,
+          "height": 2796,
+          "byteSize": 341314,
+          "sha256": "89e16439ec6f79d22c2ac835e062d47e0218fc0b85d86b575cedb722e0f42a6e"
+        }
+      ]
+    },
+    {
       "id": "journey-mushrooms",
       "displayName": "Journey Mushrooms",
       "category": "Journey",

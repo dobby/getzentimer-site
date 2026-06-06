@@ -19,6 +19,33 @@
       "defaultOffsetY": 0.208
     },
     {
+      "id": "gateway-giant-forest-doors",
+      "sourceFile": "gateway-giant-forest-doors.png",
+      "displayName": "Giant Forest Doors",
+      "category": "Gateway",
+      "sortOrder": 21,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "gateway-root-woven-doors",
+      "sourceFile": "gateway-root-woven-doors.png",
+      "displayName": "Root Woven Doors",
+      "category": "Gateway",
+      "sortOrder": 22,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "gateway-basalt-fern-doorway",
+      "sourceFile": "gateway-basalt-fern-doorway.png",
+      "displayName": "Basalt Fern Doorway",
+      "category": "Gateway",
+      "sortOrder": 23,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
       "id": "journey-mushrooms",
       "sourceFile": "journey-mushrooms.jpg",
       "displayName": "Journey Mushrooms",
