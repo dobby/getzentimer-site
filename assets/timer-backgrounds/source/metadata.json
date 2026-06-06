@@ -61,7 +61,7 @@
       "category": "Meditator",
       "sortOrder": 61,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.324
     },
     {
       "id": "meditator-distant-lunar-shoreline",
@@ -70,7 +70,7 @@
       "category": "Meditator",
       "sortOrder": 62,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.389
     },
     {
       "id": "meditator-candle-cave-stillness",
@@ -79,7 +79,7 @@
       "category": "Meditator",
       "sortOrder": 63,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.352
     },
     {
       "id": "meditator-forest-breath-clearing",
@@ -88,7 +88,7 @@
       "category": "Meditator",
       "sortOrder": 64,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.471
     },
     {
       "id": "meditator-inner-cosmos-silhouette",
@@ -97,7 +97,7 @@
       "category": "Meditator",
       "sortOrder": 65,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.061
     },
     {
       "id": "meditator-dawn-veil-abstraction",
@@ -106,7 +106,7 @@
       "category": "Meditator",
       "sortOrder": 66,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.356
     },
     {
       "id": "meditator-moon",
@@ -133,7 +133,7 @@
       "category": "Psychedelic",
       "sortOrder": 90,
       "isListed": true,
-      "defaultOffsetY": -0.569
+      "defaultOffsetY": -0.551
     },
     {
       "id": "shamanism-shaman",
@@ -142,7 +142,7 @@
       "category": "Shamanism",
       "sortOrder": 100,
       "isListed": true,
-      "defaultOffsetY": -0.309
+      "defaultOffsetY": -0.294
     },
     {
       "id": "shamanism-spirit-quest",
