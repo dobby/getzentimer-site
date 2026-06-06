@@ -241,7 +241,7 @@
       "category": "Subconscious",
       "sortOrder": 162,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.145
     },
     {
       "id": "subconscious-liquid-mirror-man",
@@ -250,7 +250,7 @@
       "category": "Subconscious",
       "sortOrder": 163,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.157
     },
     {
       "id": "subconscious-liquid-mirror-woman",
@@ -259,7 +259,7 @@
       "category": "Subconscious",
       "sortOrder": 164,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.094
     },
     {
       "id": "subconscious-underwater-spiral-man",
@@ -268,7 +268,7 @@
       "category": "Subconscious",
       "sortOrder": 165,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": -0.05
     },
     {
       "id": "subconscious-underwater-spiral-woman",
@@ -277,7 +277,7 @@
       "category": "Subconscious",
       "sortOrder": 166,
       "isListed": true,
-      "defaultOffsetY": 0.0
+      "defaultOffsetY": 0.152
     }
   ]
 }
