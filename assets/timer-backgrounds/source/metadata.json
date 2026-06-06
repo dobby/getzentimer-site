@@ -224,6 +224,60 @@
       "sortOrder": 160,
       "isListed": true,
       "defaultOffsetY": -0.188
+    },
+    {
+      "id": "subconscious-dream-corridor-man",
+      "sourceFile": "subconscious-dream-corridor-man.png",
+      "displayName": "Dream Corridor Man",
+      "category": "Subconscious",
+      "sortOrder": 161,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-dream-corridor-woman",
+      "sourceFile": "subconscious-dream-corridor-woman.png",
+      "displayName": "Dream Corridor Woman",
+      "category": "Subconscious",
+      "sortOrder": 162,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-liquid-mirror-man",
+      "sourceFile": "subconscious-liquid-mirror-man.png",
+      "displayName": "Liquid Mirror Man",
+      "category": "Subconscious",
+      "sortOrder": 163,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-liquid-mirror-woman",
+      "sourceFile": "subconscious-liquid-mirror-woman.png",
+      "displayName": "Liquid Mirror Woman",
+      "category": "Subconscious",
+      "sortOrder": 164,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-underwater-spiral-man",
+      "sourceFile": "subconscious-underwater-spiral-man.png",
+      "displayName": "Underwater Spiral Man",
+      "category": "Subconscious",
+      "sortOrder": 165,
+      "isListed": true,
+      "defaultOffsetY": 0.0
+    },
+    {
+      "id": "subconscious-underwater-spiral-woman",
+      "sourceFile": "subconscious-underwater-spiral-woman.png",
+      "displayName": "Underwater Spiral Woman",
+      "category": "Subconscious",
+      "sortOrder": 166,
+      "isListed": true,
+      "defaultOffsetY": 0.0
     }
   ]
 }

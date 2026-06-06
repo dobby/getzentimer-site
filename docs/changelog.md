@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-06-06
+- Published six new listed Subconscious timer background presets with male and female figure variants across dream-corridor, liquid-mirror, and underwater-spiral directions.
 - Published three new listed Gateway timer background presets with giant-door compositions and generated WebP thumbnail/phone variants.
 
 ## 2026-06-05
